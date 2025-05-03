@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dfc7c7; /* Page background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff; /* Form background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Minimalistic box-shadow */
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .gender-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Submit button color */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s; /* Transition for hover effect */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Hover effect */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact-number" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
+                <option value="Development">Development</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <label>Gender:</label>
+            <div class="gender-group">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
